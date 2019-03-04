@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/*
+Variables globales del CSS,
+*/
+:root { --main-color-bg: #eee; 
+	--main-color-txt: #222; 
+	--main-color1: #ffff99; 
+	--main-color2: #99ff99; 
+	--main-color3: #99ccff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100vh;
+}
+
+body {
+	background-color: var(--main-color-bg);
+	color: var(--main-color-txt);
+	display: grid;
+	grid-template-rows: 10vmax auto 5vmax;
+}
+
+body>header {
+	background-color: var(--main-color2);
+	grid-row: 1;
+	grid-column: 1/-1;
+}
+
+body>header>h1>img {
+	width: 10vhmax;
+	height: auto;
+}
+
+body>main {
+	grid-row: 2;
+	grid-column: 1/-1;
+}
+
+body>footer {
+	grid-row: 3/-1;
+	grid-column: 1/-1;
+}
+
+/* Tablet*/
+@media only screen and (min-wid:600px) {
+}
+
+/*Desktop*/
+@media only screen and (min-wid:800px) {
+}
+
+@media only screen and (orientation: portrait) {
+}
