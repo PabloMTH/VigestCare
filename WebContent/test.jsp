@@ -1,8 +1,8 @@
 <%@page import="java.util.Date"%>
+<%@ page trimDirectiveWhitespaces="true"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%    
-    out.print("Name: Samsung Galaxy J7<br />");
-    out.print("Price: 15500<br />");    
-    out.print("Screen Size: 5.5<br />");
-    out.print("Operating System: Android 6.0<br />");
+    out.print("Ay, los monetes!<br />");
+    out.print((new Date()));    
 %>
-<%=(new Date())%>

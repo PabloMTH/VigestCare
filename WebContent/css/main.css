@@ -3,8 +3,10 @@
 /*
 Variables globales del CSS,
 */
-:root { --main-color-bg: #eee; 
-	--main-color-txt: #222; 
+:root {
+	--main-color-light: #eeeeee; 
+	--main-color-dark: #222222;
+	--main-color-gray: #cccccc;
 	--main-color1: #ffff99; 
 	--main-color2: #99ff99; 
 	--main-color3: #99ccff;
@@ -21,31 +23,58 @@ html, body {
 }
 
 body {
-	background-color: var(--main-color-bg);
-	color: var(--main-color-txt);
+	background-color: var(--main-color-light);
+	color: var(--main-color-dark);
 	display: grid;
-	grid-template-rows: 10vmax auto 5vmax;
+	grid-template-rows: calc(32px + 4vmax) auto calc(16px + 2vmax);
 }
 
 body>header {
-	background-color: var(--main-color2);
 	grid-row: 1;
 	grid-column: 1/-1;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 5px;
+	text-align: center;
+	background-color: var(--main-color2);
+	background: linear-gradient(90deg, var(--main-color1) 25%, var(--main-color2) 50%, var(--main-color3) 75%);
 }
+/*    background-size: 600% 600%;
+    animation: 30s ease infinite alternate HeaderAnim;
+}
+@keyframes HeaderAnim {
+    0%   { background-position:0% 50%   }
+    50%  { background-position:100% 50% }
+    100% { background-position:0% 50%   }
+}*/
 
 body>header>h1>img {
-	width: 10vhmax;
+	display: inline;
+	vertical-align: top;
+	width: calc(32px + 2vmax);
 	height: auto;
 }
 
 body>main {
 	grid-row: 2;
 	grid-column: 1/-1;
+	right: 0;
+	left: 0;
+	align-content:center;
+	padding: calc(5px + 4vmax);
 }
 
 body>footer {
 	grid-row: 3/-1;
 	grid-column: 1/-1;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 5px;
+	text-align: center;
+	color: var(--main-color-dark);
+	background-color:  var(--main-color-gray);
 }
 
 /* Tablet*/

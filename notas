@@ -1,0 +1,5 @@
+"CREATE SCHEMA `vigestcare` DEFAULT CHARACTER SET utf8 COLLATE utf8_bin ;"
+
+
+SHA2(str, hash_length)
+"SELECT SHA2('abc', 224);"
