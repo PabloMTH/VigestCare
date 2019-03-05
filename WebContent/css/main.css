@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
-/*
-Variables globales del CSS,
-*/
+/*Variables globales del CSS */
 :root { 
 	--main-color-light: #eeeeee; 
     --main-color-dark: #222222; 
@@ -127,4 +125,9 @@ body>footer {
 	#asidemenutoggle:checked ~ aside {
 		width: calc(256px + 6vmax);
 	}
+}
+
+
+@media print {
+  /* Contenido del fichero print.css */
 }
