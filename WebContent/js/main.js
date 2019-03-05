@@ -33,7 +33,6 @@ function fetch(url, container) {
 function toggleLogin(){
 	id("asideLogin").hidden = !id("asideLogin").hidden;
 	id("bLoginShow").hidden = !id("asideLogin").hidden;
-	
 }
 
 function addEvents() {
